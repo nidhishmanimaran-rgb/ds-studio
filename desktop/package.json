@@ -1,0 +1,16 @@
+{
+  "name": "desktop",
+  "version": "1.0.0",
+  "description": "Data Science Studio",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Nidhish Kumaran",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^43.1.0"
+  }
+}
