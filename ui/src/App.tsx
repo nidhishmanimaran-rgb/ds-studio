@@ -4,6 +4,7 @@ import ActivityBar from "./components/ActivityBar/ActivityBar";
 import TitleBar from "./components/TitleBar/TitleBar";
 import Editor from "./components/Editor/Editor";
 import StatusBar from "./components/StatusBar/StatusBar";
+import Explorer from "./components/Explorer/Explorer";
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
 
       <div className="main">
         <ActivityBar />
+
+        <Explorer />
 
         <div className="workspace">
           <Editor />

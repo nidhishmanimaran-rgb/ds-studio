@@ -1,26 +1,76 @@
-.activity-bar{
-    width:60px;
-    background:#252526;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    padding-top:15px;
-    border-right:1px solid #333;
+.activity-bar {
+    width: 56px;
+    background: #181818;
+    border-right: 1px solid #2d2d2d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.activity-icon{
-    width:42px;
-    height:42px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#c5c5c5;
-    margin-bottom:10px;
-    cursor:pointer;
-    border-radius:8px;
+.activity-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 14px;
 }
 
-.activity-icon:hover{
-    background:#3a3d41;
-    color:white;
+.activity-bottom {
+    display: flex;
+    justify-content: center;
+
+    padding-bottom: 12px;
+}
+
+.activity-icon {
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    background: transparent;
+
+    color: #8b8b8b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all .2s ease;
+
+    position: relative;
+}
+
+.activity-icon:hover {
+
+    color: white;
+    background: #2b2b2b;
+
+}
+
+.activity-icon.active {
+
+    color: white;
+
+}
+
+.activity-icon.active::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 3px;
+
+    height: 24px;
+
+    background: #0078d4;
+
+    border-radius: 0 4px 4px 0;
+
 }

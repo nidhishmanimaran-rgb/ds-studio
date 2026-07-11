@@ -1,12 +1,32 @@
 import "./Editor.css";
+import MonacoEditor from "@monaco-editor/react";
 
-function Editor() {
+function CodeEditor() {
   return (
-    <div className="editor">
-      <h2>Welcome to Data Science Studio</h2>
-      <p>Your professional Data Science IDE starts here.</p>
+    <div className="editor-container">
+      <MonacoEditor
+        language="python"
+        theme="vs-dark"
+        height="100%"
+        value={`print("Welcome to Data Science Studio")
+
+import pandas as pd
+
+df = pd.read_csv("data.csv")
+
+print(df.head())
+`}
+        options={{
+          automaticLayout: true,
+          minimap: {
+            enabled: false,
+          },
+          fontSize: 14,
+          wordWrap: "on",
+        }}
+      />
     </div>
   );
 }
 
-export default Editor;
+export default CodeEditor;
