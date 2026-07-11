@@ -1,15 +1,9 @@
 .status-bar{
-
-    height:28px;
-
+    height:26px;
     background:#007acc;
-
     color:white;
-
     display:flex;
-
     align-items:center;
-
-    padding-left:15px;
-
+    padding:0 15px;
+    font-size:13px;
 }

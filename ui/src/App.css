@@ -1,20 +1,17 @@
-.app {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #1e1e1e;
-    color: white;
-    font-family: "Segoe UI", sans-serif;
+.app{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#1e1e1e;
 }
 
-.app h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+.main{
+    flex:1;
+    display:flex;
 }
 
-.app p {
-    font-size: 18px;
-    color: #b0b0b0;
+.workspace{
+    flex:1;
+    display:flex;
 }

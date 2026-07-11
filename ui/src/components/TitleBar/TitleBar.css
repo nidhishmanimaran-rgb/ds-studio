@@ -1,0 +1,11 @@
+.title-bar{
+    height:40px;
+    background:#181818;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding-left:20px;
+    border-bottom:1px solid #333;
+    font-size:15px;
+    font-weight:600;
+}

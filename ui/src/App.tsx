@@ -1,14 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import "./App.css";
+
+import ActivityBar from "./components/ActivityBar/ActivityBar";
+import TitleBar from "./components/TitleBar/TitleBar";
+import Editor from "./components/Editor/Editor";
+import StatusBar from "./components/StatusBar/StatusBar";
 
 function App() {
   return (
     <div className="app">
-      <h1>Data Science Studio</h1>
-      <p>Building the next generation Data Science IDE</p>
+      <TitleBar />
+
+      <div className="main">
+        <ActivityBar />
+
+        <div className="workspace">
+          <Editor />
+        </div>
+      </div>
+
+      <StatusBar />
     </div>
   );
 }
